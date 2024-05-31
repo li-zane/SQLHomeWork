@@ -1,2 +1,3 @@
 [server]
+server = 520
 enableStaticServing = true
