@@ -1,0 +1,124 @@
+<mxfile host="app.diagrams.net" modified="2024-05-31T07:38:08.740Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Safari/537.36 HBPC/12.1.3.303" etag="6MThbMiXvvANepektxjK" version="24.4.10" type="device">
+  <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
+    <mxGraphModel dx="1050" dy="515" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="QwZaYRjVoD2k1rPnlovD-12" value="省份" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="840" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="QwZaYRjVoD2k1rPnlovD-14" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" target="QwZaYRjVoD2k1rPnlovD-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="840" as="sourcePoint" />
+            <mxPoint x="240" y="810" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QwZaYRjVoD2k1rPnlovD-15" value="投资" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="780" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="QwZaYRjVoD2k1rPnlovD-17" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="270" y="920" as="sourcePoint" />
+            <mxPoint x="239" y="880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QwZaYRjVoD2k1rPnlovD-18" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="799.55" as="sourcePoint" />
+            <mxPoint x="320.00091516489755" y="799.4981863736732" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="340" y="799.55" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QwZaYRjVoD2k1rPnlovD-21" value="固定资产" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="345" y="780" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="QwZaYRjVoD2k1rPnlovD-22" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" target="QwZaYRjVoD2k1rPnlovD-23">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="425" y="800" as="sourcePoint" />
+            <mxPoint x="450" y="780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QwZaYRjVoD2k1rPnlovD-23" value="总投资规模" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="720" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QwZaYRjVoD2k1rPnlovD-24" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" target="QwZaYRjVoD2k1rPnlovD-25">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="425" y="800" as="sourcePoint" />
+            <mxPoint x="450" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QwZaYRjVoD2k1rPnlovD-25" value="经济类型" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="820" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QwZaYRjVoD2k1rPnlovD-26" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" target="QwZaYRjVoD2k1rPnlovD-30">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="510" y="850" as="sourcePoint" />
+            <mxPoint x="530" y="880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QwZaYRjVoD2k1rPnlovD-27" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="510" y="850" as="sourcePoint" />
+            <mxPoint x="540" y="850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QwZaYRjVoD2k1rPnlovD-28" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" target="QwZaYRjVoD2k1rPnlovD-33">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="510" y="850" as="sourcePoint" />
+            <mxPoint x="530" y="830" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QwZaYRjVoD2k1rPnlovD-30" value="投资规模" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="890" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QwZaYRjVoD2k1rPnlovD-31" value="类型名称" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="820" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QwZaYRjVoD2k1rPnlovD-33" value="投资增速" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="750" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QwZaYRjVoD2k1rPnlovD-35" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" target="QwZaYRjVoD2k1rPnlovD-36">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="780" as="sourcePoint" />
+            <mxPoint x="280" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QwZaYRjVoD2k1rPnlovD-36" value="年份" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="710" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QwZaYRjVoD2k1rPnlovD-37" value="销售" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="910" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="QwZaYRjVoD2k1rPnlovD-38" value="年份" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="960" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QwZaYRjVoD2k1rPnlovD-39" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="QwZaYRjVoD2k1rPnlovD-38">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="230" y="1000" as="sourcePoint" />
+            <mxPoint x="280" y="950" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QwZaYRjVoD2k1rPnlovD-40" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="320" y="930" as="sourcePoint" />
+            <mxPoint x="350" y="930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QwZaYRjVoD2k1rPnlovD-42" value="社会消费品" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="345" y="910" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="QwZaYRjVoD2k1rPnlovD-44" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="425" y="930" as="sourcePoint" />
+            <mxPoint x="440" y="930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QwZaYRjVoD2k1rPnlovD-45" value="零售总额" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="900" width="80" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

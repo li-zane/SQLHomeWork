@@ -4,19 +4,13 @@ import numpy as np
 import pandas as pd
 import plotly.express as px
 import streamlit as st
-from st_pages import Page, add_page_title, show_pages
+import utils
 
-show_pages([
-    Page("./HomePage.py", "项目介绍", "👋🏼"),
-    Page("./pages/QuestionPage1.py", "问题1", "1️⃣"),
-    Page("./pages/QuestionPage2.py", "问题2", "2️⃣"),
-    Page("./pages/QuestionPage3.py", "问题3", "3️⃣"),
-    Page("./pages/QuestionPage4.py", "问题4", "4️⃣")
-])
 st.set_page_config(page_title="QuestionPage1",
                    page_icon="4️⃣",
                    layout="wide",
                    initial_sidebar_state="expanded")
+utils.show_page()
 
 
 def side_bar():
@@ -45,14 +39,7 @@ def main():
         ''')
 
     if show_code:
-        with open(__file__, 'r', encoding='utf-8') as r:
-            code = r.read()
-
-        st.markdown('''
-                    ---
-                    ## 项目代码
-                    ''')
-        st.code(code, 'python')
+        utils.show_code(__file__)
 
     if show_task1:
         pass
@@ -70,5 +57,6 @@ def main():
         pass
 
 
+utils.processing(__file__)
 side_bar()
 main()

@@ -1,0 +1,3 @@
+[server]
+port = 520
+enableStaticServing = true

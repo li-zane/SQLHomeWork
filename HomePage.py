@@ -4,20 +4,13 @@ import numpy as np
 import pandas as pd
 import plotly.express as px
 import streamlit as st
-from st_pages import Page, add_page_title, show_pages
-
-show_pages([
-    Page("./HomePage.py", "项目介绍", "👋🏼"),
-    Page("./pages/QuestionPage1.py", "问题1", "1️⃣"),
-    Page("./pages/QuestionPage2.py", "问题2", "2️⃣"),
-    Page("./pages/QuestionPage3.py", "问题3", "3️⃣"),
-    Page("./pages/QuestionPage4.py", "问题4", "4️⃣")
-])
+import utils
 
 st.set_page_config(page_title="BabySQL",
                    page_icon="👋",
                    layout="wide",
                    initial_sidebar_state="expanded")
+utils.show_page()
 
 show_code = False  # 展示代码
 
@@ -52,8 +45,17 @@ def main():
                 - **问题3**：
                 - **问题4**：
                 - **扩展内容**：
-                - **页面设计**：采用 **streamlit** 模块制作 Web APP，用 **sqlite3** 模块创建、管理、使用数据库，用 **plotly** 库展示数据分析图。
-                
+                - **页面设计**：采用 **streamlit** 模块制作 Web APP，用 **sqlite3** 模块创建、管理、使用数据库，用 **plotly** 库展示数据分析图，使用 **draw.io** 网站绘制数据库系统 ER 图与系统架构图。
+                ''')
+
+    with st.expander("数据库系统 ER 图"):
+        with open("./static/ER.svg", 'r', encoding='utf-8') as img:
+            st.image(img.read(), output_format='PNG')
+
+    with st.expander("数据库系统架构图"):
+        pass
+
+    st.markdown('''
                 ---
 
                 ## 项目架构
@@ -74,15 +76,9 @@ def main():
         ''', 'markdown')
 
     if show_code:
-        with open(__file__, 'r', encoding='utf-8') as r:
-            code = r.read()
-
-        st.markdown('''
-                    ---
-                    ## 项目代码
-                    ''')
-        st.code(code, language='python')
+        utils.show_code(__file__)
 
 
+utils.processing(__file__)
 sidebar()
 main()
