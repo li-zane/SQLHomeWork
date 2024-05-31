@@ -4,12 +4,6 @@ import numpy as np
 import pandas as pd
 import plotly.express as px
 import streamlit as st
-
-st.set_page_config(page_title="BabySQL",
-                   page_icon="👋",
-                   layout="wide",
-                   initial_sidebar_state="expanded")
-
 from st_pages import Page, add_page_title, show_pages
 
 show_pages([
@@ -20,32 +14,75 @@ show_pages([
     Page("./pages/QuestionPage4.py", "问题4", "4️⃣")
 ])
 
-show_arrangements = False  # 展示分工
-show_content = False  # 展示内容
-show_code = False  # 展示全部代码
-with st.sidebar:
-    st.markdown("# 操作选项：")
-    show_arrangements = st.checkbox('查看分工')
-    show_content = st.checkbox('项目大纲')
-    show_code = st.checkbox('查看代码')
+st.set_page_config(page_title="BabySQL",
+                   page_icon="👋",
+                   layout="wide",
+                   initial_sidebar_state="expanded")
 
-st.markdown('# 👋🏼 张芮嘉&何羽涵&AI 的数据库项目作业')
+show_code = False  # 展示代码
 
-if show_arrangements:
+
+def sidebar():
+    global show_code
+    with st.sidebar:
+        st.markdown("# 操作选项：")
+        show_code = st.checkbox('查看代码')
+
+
+def main():
+    global show_code
     st.markdown('''
-    ## 分工合作
-    ''')
+                
+                # 👋🏼 ICPEG 数据库设计与应用
 
-if show_content:
-    st.markdown('''
-    ## 项目大纲
-    ''')
+                ---
 
-# with st.expander('项目代码', expanded=show_code):
-#     st.markdown("""
+                ## 作者与分工
 
-#         import
+                - **张芮嘉**：
+                - **何羽涵**：
+                - **AIGC**：
+                
+                ---
 
-#         """)
+                ## 项目内容
 
-# st.sidebar.success("Select a demo above.")
+                - **问题1**：
+                - **问题2**：
+                - **问题3**：
+                - **问题4**：
+                - **扩展内容**：
+                - **页面设计**：采用 **streamlit** 模块制作 Web APP，用 **sqlite3** 模块创建、管理、使用数据库，用 **plotly** 库展示数据分析图。
+                
+                ---
+
+                ## 项目架构
+                
+                ''')
+
+    st.code(
+        r'''
+        SQLHomeWork/ 
+        |
+        |—— HomePage.py
+        |—— requirements.txt
+        |—— pages/
+        | |—— QuestionPage1.py
+        | |—— QuestionPage2.py
+        | |—— QuestionPage3.py
+        | |—— QuestionPage4.py
+        ''', 'markdown')
+
+    if show_code:
+        with open(__file__, 'r', encoding='utf-8') as r:
+            code = r.read()
+
+        st.markdown('''
+                    ---
+                    ## 项目代码
+                    ''')
+        st.code(code, language='python')
+
+
+sidebar()
+main()
