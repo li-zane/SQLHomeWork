@@ -53,7 +53,8 @@ def main():
             st.image(img.read(), output_format='PNG')
 
     with st.expander("数据库系统架构图"):
-        pass
+        with open("./static/系统架构图.svg", 'r', encoding='utf-8') as img:
+            st.image(img.read(), output_format='PNG')
 
     st.markdown('''
                 ---
