@@ -14,9 +14,10 @@ utils.show_page()
 
 
 def side_bar():
-    global show_code, show_task1, show_task2, show_task3, show_task4
+    global show_task1, show_task2, show_task3, show_task4
     with st.sidebar:
-        show_code = st.checkbox("查看代码")
+        # show_code = st.checkbox("查看代码")
+        st.markdown("# 操作选项：")
         show_task1 = st.checkbox("查看任务 1")
         show_task2 = st.checkbox("查看任务 2")
         show_task3 = st.checkbox("查看任务 3")
@@ -24,7 +25,7 @@ def side_bar():
 
 
 def main():
-    global show_code, show_task1, show_task2, show_task3, show_task4
+    global show_task1, show_task2, show_task3, show_task4
 
     st.markdown('''
         # 📑 全国产业结构变化及区域差异
@@ -36,8 +37,8 @@ def main():
         4. [x] 分析在2020~2022年产业结构变化与湖北省最相似的三个省份。在衡量产业结构时，采用第二、三产业同比增长值(或增长率)的比值进行测度
         ''')
 
-    if show_code:
-        utils.show_code(__file__)
+    # if show_code:
+    #     utils.show_code(__file__)
 
     if show_task1:
         pass

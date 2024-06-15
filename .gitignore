@@ -1,1 +1,6 @@
-./streamlit
+# .streamlit
+Data/*
+!Data/省份等级的灯光值_平均值.xlsx
+DataBase
+ER_Charts
+extention.ipynb

@@ -26,9 +26,9 @@ utils.show_page()
 
 
 def side_bar():
-    global show_code, show_task1, show_task2, show_task3, show_task4
+    global show_task1, show_task2, show_task3, show_task4
     with st.sidebar:
-        show_code = st.checkbox("查看代码")
+        st.markdown("# 操作选项：")
         show_task1 = st.checkbox("查看任务 1")
         show_task2 = st.checkbox("查看任务 2")
         show_task3 = st.checkbox("查看任务 3")
@@ -36,7 +36,7 @@ def side_bar():
 
 
 def main():
-    global show_code, show_task1, show_task2, show_task3, show_task4
+    global show_task1, show_task2, show_task3, show_task4
 
     st.markdown('''
         # 📑 固定资产投资及社会消费品零售总额
@@ -48,8 +48,8 @@ def main():
         4. [x] 分析在新冠肺炎疫情三年(20220~2022)中，哪些省份社会消费品零售总额在2020年同比下降，2021年同比增加，2022年同比下降，计算这些省份在所有省份和直辖市的占比。湖北省在其中吗？
         ''')
 
-    if show_code:
-        utils.show_code(__file__)
+    # if show_code:
+    #     utils.show_code(__file__)
 
     if show_task1:
         pass

@@ -19,7 +19,7 @@ def sidebar():
     global show_code
     with st.sidebar:
         st.markdown("# 操作选项：")
-        show_code = st.checkbox('查看代码')
+        # show_code = st.checkbox('查看代码')
 
 
 def main():
@@ -56,28 +56,28 @@ def main():
         with open("./static/系统架构图.svg", 'r', encoding='utf-8') as img:
             st.image(img.read(), output_format='PNG')
 
-    st.markdown('''
-                ---
+    # st.markdown('''
+    #             ---
 
-                ## 项目架构
-                
-                ''')
+    #             ## 项目架构
 
-    st.code(
-        r'''
-        SQLHomeWork/ 
-        |
-        |—— HomePage.py
-        |—— requirements.txt
-        |—— pages/
-        | |—— QuestionPage1.py
-        | |—— QuestionPage2.py
-        | |—— QuestionPage3.py
-        | |—— QuestionPage4.py
-        ''', 'markdown')
+    #             ''')
 
-    if show_code:
-        utils.show_code(__file__)
+    # st.code(
+    #     r'''
+    #     SQLHomeWork/
+    #     |
+    #     |—— HomePage.py
+    #     |—— requirements.txt
+    #     |—— pages/
+    #     | |—— QuestionPage1.py
+    #     | |—— QuestionPage2.py
+    #     | |—— QuestionPage3.py
+    #     | |—— QuestionPage4.py
+    #     ''', 'markdown')
+
+    # if show_code:
+    #     utils.show_code(__file__)
 
 
 utils.processing(__file__)

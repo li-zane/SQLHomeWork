@@ -14,9 +14,10 @@ utils.show_page()
 
 
 def side_bar():
-    global show_code, show_task1, show_task2, show_task3, show_task4, show_task5
+    global show_task1, show_task2, show_task3, show_task4, show_task5
     with st.sidebar:
-        show_code = st.checkbox("查看代码")
+        # show_code = st.checkbox("查看代码")
+        st.markdown("# 操作选项：")
         show_task1 = st.checkbox("查看任务 1")
         show_task2 = st.checkbox("查看任务 2")
         show_task3 = st.checkbox("查看任务 3")
@@ -25,7 +26,7 @@ def side_bar():
 
 
 def main():
-    global show_code, show_task1, show_task2, show_task3, show_task4, show_task5
+    global show_task1, show_task2, show_task3, show_task4, show_task5
 
     st.markdown('''
         # 📑 居民收入变化及区域差异
@@ -38,8 +39,8 @@ def main():
         5. [x] 在新冠肺炎疫情三年(20220~2022)中，哪些区域居民收入同比年增长率下降？
         ''')
 
-    if show_code:
-        utils.show_code(__file__)
+    # if show_code:
+    #     utils.show_code(__file__)
 
     if show_task1:
         pass

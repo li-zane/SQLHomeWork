@@ -11,7 +11,8 @@ def show_page():
         Page("./pages/QuestionPage1.py", "问题1", "1️⃣"),
         Page("./pages/QuestionPage2.py", "问题2", "2️⃣"),
         Page("./pages/QuestionPage3.py", "问题3", "3️⃣"),
-        Page("./pages/QuestionPage4.py", "问题4", "4️⃣")
+        Page("./pages/QuestionPage4.py", "问题4", "4️⃣"),
+        Page("./pages/Extention.py", "扩展", "🥳")
     ])
 
 

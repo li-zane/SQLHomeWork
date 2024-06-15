@@ -14,9 +14,10 @@ utils.show_page()
 
 
 def side_bar():
-    global show_code, show_task1, show_task2, show_task3, show_task4
+    global show_task1, show_task2, show_task3, show_task4
     with st.sidebar:
-        show_code = st.checkbox("查看代码")
+        # show_code = st.checkbox("查看代码")
+        st.markdown("# 操作选项：")
         show_task1 = st.checkbox("查看任务 1")
         show_task2 = st.checkbox("查看任务 2")
         show_task3 = st.checkbox("查看任务 3")
@@ -24,7 +25,7 @@ def side_bar():
 
 
 def main():
-    global show_code, show_task1, show_task2, show_task3, show_task4
+    global show_task1, show_task2, show_task3, show_task4
 
     st.markdown('''
         # 📑 全国生产总值增长趋势及区域差异
@@ -36,8 +37,8 @@ def main():
         4. [x] 分析比较在2017、2018、2019、2020、2021和2022 GDP同比增长率最高的3个区域和最低的3个区域
         ''')
 
-    if show_code:
-        utils.show_code(__file__)
+    # if show_code:
+    #     utils.show_code(__file__)
 
     if show_task1:
         pass
