@@ -20,7 +20,7 @@ def show_results_func():
                 ) as response:
         counties = response.json()
 
-    data = pd.read_csv("../Data/省份等级的灯光值_平均值.CSV",
+    data = pd.read_csv("./Data/省份等级的灯光值_平均值.CSV",
                        index_col=0,
                        usecols=[0, 1, 2] + list(range(4, 35)),
                        dtype={
