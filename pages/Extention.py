@@ -20,14 +20,15 @@ def show_results_func():
                 ) as response:
         counties = response.json()
 
-    data = pd.read_excel("./Data/省份等级的灯光值_平均值.xlsx",
-                         index_col=0,
-                         usecols=[0, 1, 2] + list(range(4, 35)),
-                         dtype={
-                             'PR_ID': int
-                         }).melt(id_vars=['PR', 'PR_ID'],
-                                 var_name='DATE',
-                                 value_name='Light_Intensity')
+    data = pd.read_csv(
+        "https://raw.githubusercontent.com/li-zane/SQLHomeWork/main/Data/省份等级的灯光值_平均值.CSV",
+        index_col=0,
+        usecols=[0, 1, 2] + list(range(4, 35)),
+        dtype={
+            'PR_ID': int
+        }).melt(id_vars=['PR', 'PR_ID'],
+                var_name='DATE',
+                value_name='Light_Intensity')
 
     # 创建一个 Plotly 地图，展示每年各省的光照强度
 

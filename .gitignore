@@ -1,6 +1,6 @@
 # .streamlit
 Data/*
-!Data/省份等级的灯光值_平均值.xlsx
+!Data/省份等级的灯光值_平均值.csv
 DataBase
 ER_Charts
 extention.ipynb
